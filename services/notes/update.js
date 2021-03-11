@@ -22,7 +22,6 @@ export const main = handler(async (event, context) => {
     // can inspect 'result' below to see how it works with different settings
     ReturnValues: "ALL_NEW",
   };
-
   await dynamoDb.update(params);
 
   return { status: true };
